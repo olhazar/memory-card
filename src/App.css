@@ -1,0 +1,81 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.memory-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #e90000;
+  text-shadow: 3px 2px #000;
+}
+
+p {
+  font-size: 18px;
+  color: #e90000;
+  text-shadow: 2px 2px #000;
+}
+
+button {
+  background-color: #c91616;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-family: "Press Start 2P", cursive;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff0000;
+  transition: 0.3s;
+}
+
+.card-grid {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.card {
+  position: relative; 
+  cursor: pointer;
+}
+
+.card img {
+  width: 100px;
+  display: block;
+  border: 2px solid #943030;
+  border-radius: 6px;
+}
+
+.card .front {
+  transform: rotateY(90deg);
+  position: absolute;
+}
+.flipped .front {
+  transform: rotateY(0deg);
+}
+
+.card .back {
+  transition: all ease-in 0.1s;
+  transition-delay: 0s;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
