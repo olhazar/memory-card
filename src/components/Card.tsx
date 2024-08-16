@@ -35,7 +35,7 @@ export const Card: React.FC<CardProps> = ({
         <img className="front" src={card.img} alt="card front" />
         <img
           className="back"
-          src="../../public/assets/question1.png"
+          src="/public/assets/question1.png"
           alt="card back"
           onClick={onClickBack}
         />
